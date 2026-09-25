@@ -6,15 +6,22 @@
 	<style>
 		body{
 			margin:0;
+			background-image:url("bg.jpg");
+			background-size:cover;
 		}
 		wrapper{
 			width:1366px;
 			display:block;
-			marhon:auto;
+			margin:auto;
+			background-color:rgba(255,255,255,.5);
+			padding:20px;
 		}
 		.logo{
 			width:200px;
 			vertical-align:middle;
+		}
+		.banner{
+			width:600px;
 		}
 		h1{
 			display:inline;
@@ -22,6 +29,11 @@
 		header{
 			background-color:beige;
 			padding: 20px;
+		}
+		.container{
+			display: grid;
+			grid-template-columns: 30% 70%;
+			gap: 20px;
 		}
 	</style>
 </head>
@@ -34,7 +46,8 @@
   <main> <img src="biscuits.jpg" class="banner" />
     <h2>Red Lobster&rsquo;s Cheddar Buscuits Recipe</h2>
     <p>Warm, flaky, buttery biscuits packed with sharp cheddar cheese and topped with a savory garlic-herb butter.</p>
-    <section class="ingredients">
+   <div class="container">
+	  <section class="ingredients">
       <h3>Ingredients</h3>
       <ul>
         <li>All-purpose flour</li>
@@ -65,6 +78,7 @@
         <li>Serve warm: Let them cool for a couple of minutes, then enjoy while they&rsquo;re warm and cheesy.</li>
       </ol>
     </section>
+	</div>
   </main>
   <footer>
     <p>&copy; 2026, Jaheen Luzunaris.</p>
