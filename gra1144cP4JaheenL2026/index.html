@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Richard Rogers Theatre | Jaheen L, 2026</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Faster+One&family=Rubik+Iso&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
+	font-family: "Cormorant Garamond", serif;
     margin: 0;
     background-color: #FFFC6F;
     background-image: url(curtains.jpeg);
@@ -20,9 +24,8 @@ wrapper {
 section {
     height: 1024px;
     background-size: cover;
-    background-position: center c
-%;
-    background-position: center center;
+    background-position: center;
+    position: relative;
 }
 nav {
     background-color: black;
@@ -48,6 +51,27 @@ ul a li:hover {
 #location {
     background-image: url(outside.jpg);
 }
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+}
+#calendar {
+    position: absolute;
+    top: 125px;
+    width: 428px;
+    height: 315px;
+    right: 845px;
+}
+#video {
+    position: absolute;
+    left: 238px;
+    right: 201px;
+    top: 522px;
+}
+#map {
+    position: absolute;
+    left: 430px;
+}
 </style>
 </head>
 
@@ -62,9 +86,13 @@ ul a li:hover {
         <a href="#home"><li>Home</li></a> 
 		  <a href="#media"><li>Media</li></a> 
 		  <a href="#location"><li>Location</li></a>
+		  <a href="#soundtrack">
+		  <li>Soundtrack</li>
+		  </a>
       </ul>
     </nav>
     <h2>Home</h2>
+	  <iframe src="https://calendar.google.com/calendar/embed?src=86da6f80ce3c17cb6dfdb584483d4376251bec51f3de203d21102e418fec74e9%40group.calendar.google.com&ctz=America%2FNew_York" width="560" height="480" scrolling="no" frameborder="0" id="calendar" style="border: 0"></iframe>
   </section>
   <section id="media">
     <nav>
@@ -72,9 +100,13 @@ ul a li:hover {
          <a href="#home"><li>Home</li></a> 
 		  <a href="#media"><li>Media</li></a> 
 		  <a href="#location"><li>Location</li></a>
+		  <a href="#soundtrack">
+		  <li>Soundtrack</li>
+		  </a>
       </ul>
     </nav>
     <h2>Media</h2>
+	  <iframe src="https://www.youtube.com/embed/0D3zz6byFT4?si=9_zF5pzpoQp0XrO_" width="560" height="315" frameborder="0" id="video" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
   <section id="location">
     <nav>
@@ -82,11 +114,28 @@ ul a li:hover {
         <a href="#home"><li>Home</li></a> 
 		  <a href="#media"><li>Media</li></a> 
 		  <a href="#location"><li>Location</li></a>
+		  <a href="#soundtrack">
+		  <li>Soundtrack</li>
+		  </a>
       </ul>
     </nav>
     <h2>Location</h2>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.13335603005!2d-73.98911532334985!3d40.759091571386556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25854460a2db3%3A0xd44aae77fbd86ee8!2sRichard%20Rodgers%20Theatre!5e0!3m2!1sen!2sus!4v1792178121219!5m2!1sen!2sus" width="600" height="450" id="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </section>
-  <footer></footer>
+	<section id="soundtrack">
+    <nav>
+      <ul>
+        <a href="#home"><li>Home</li></a> 
+		  <a href="#media"><li>Media</li></a> 
+		  <a href="#location"><li>Location</li></a>
+		  <a href="#soundtrack">
+		  <li>Soundtrack</li></a>
+      </ul>
+    </nav>
+    <h2>Soundtrack</h2>
+		<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2nZEH1WHqkby5zQXn0dFn7?utm_source=generator&si=babd4d22b600409f" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	</section>
+  <footer><p>© 2026, Jaheen Luzunaris. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 </wrapper>
 </body>
 </html>
