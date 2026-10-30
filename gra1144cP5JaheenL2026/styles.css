@@ -1,7 +1,19 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'frutiger66_bold_italic';
+    src: url('frutiger_66_bold_italic-webfont.woff2') format('woff2'),
+         url('frutiger_66_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
     margin: 0;
     background-color: white;
+    font-family: 'frutiger66_bold_italic';
+    font-style: italic;
+    font-weight: bold;
+	cursor: url("nosmilefrank.png"), auto; 
 }
 wrapper {
     width: 1366px;
@@ -17,6 +29,7 @@ ul a li {
 }
 ul a li:hover  {
     background-color: orange;
+	cursor: url("smilefrank.png"),auto;
 }
 main {
     height: 1024px;
@@ -25,11 +38,19 @@ main {
     background-position: center center;
     color: white;
 }
+#store {
+}
 h1 {
     padding: 20px;
     margin: 0;
     display: inline-block;
     font-size: 71px;
+}
+#privacy p {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.50);
+    width: 25%;
+    margin-left: 15px;
 }
 h2 {
     padding: 20px;
@@ -42,9 +63,34 @@ ul {
 }
 nav {
     background-color: black;
+    font-style: italic;
 }
 #news {
     background-image: url(FrankLive2.jpg);
+}
+#store {
+    background-image: url(frank3.jpg);
+}
+#videos {
+    background-image: url(frank4.png);
+}
+#tour {
+    background-image: url(frank5.jpg);
+}
+#gallery {
+    background-image: url(frank6.jpeg);
+}
+#email {
+    background-image: url(frank7.jpg);
+}
+#merch {
+    background-image: url(frank8.jpeg);
+}
+#blog {
+    background-image: url(frank9.jpg);
+}
+#privacy {
+    background-image: url(frank10.jpeg);
 }
 .logo {
     width: auto;
