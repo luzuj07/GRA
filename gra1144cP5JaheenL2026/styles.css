@@ -38,6 +38,18 @@ main {
     background-position: center center;
     color: white;
 }
+channel orange {
+    width: 33%;
+    height: 352px;
+    display: block;
+}
+Blond {
+    width: 33%;
+    height: 352px;
+    display: block;
+}
+
+
 #store {
 }
 h1 {
@@ -96,4 +108,42 @@ nav {
     width: auto;
     height: 150px;
     vertical-align: middle;
+}
+.NostalgiaUltra { 
+	display: block;
+}
+.Blond {
+	display: block;
+}
+.channelorange {
+	display: block;
+}
+.Store1 {
+	display: block;
+}
+.Store2 {
+	display: block;
+}
+.Store3 {
+	display: block;
+}
+.store4 {
+	display: block;
+}#videos iframe {
+    display: block;
+}
+#videos iframe2 {
+    display: block;
+}
+.GalleryFrank {
+	display: block;
+}
+.signup {
+	display: block;
+}
+.Merch {
+	display: block;
+}
+.Blog {
+	display: block;
 }
