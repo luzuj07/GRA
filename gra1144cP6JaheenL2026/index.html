@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nike | Jacket | Jaheen Luzunaris, 2026</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    background-color: white;
+}
+header {
+    background-color: black;
+    color: white;
+}
+main {
+    display: grid;
+	grid-template-columns: 48.5% 48.5%;
+	gap:16px;
+}
+section {
+    height: 828px;
+}
+#apparel {
+    position: relative;
+}
+#apparel img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+#colors button {
+    width: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border: thick solid white;
+    height: 50px;
+}
+#colors button:hover {
+    border-color: black;
+}
+#Grey-btn {
+    background-color: #999997;
+}
+#Red-btn {
+    background-color: #B80029;
+}
+#Blue-btn {
+    background-color: #1F54B8;
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('tech2.jpg','red2.jpg','blue2.jpg')">
+<wrapper>
+  <header><img alt="" width="" height="" class="logo">
+    <h1>Nike</h1>
+  </header>
+  <main>
+    <section id="apparel"> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Tech-Grey','','tech2.jpg',1)"><img src="tech1.jpg" alt="Tech-Grey" width="2880" height="3600" id="Tech-Grey"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Tech-Red','','red2.jpg',1)"><img src="red1.jpg" alt="Tech-Red" width="1728" height="2160" id="Tech-Red"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Tech-Blue','','blue2.jpg',1)"><img src="blue1.jpg" alt="Tech-Blue" width="1728" height="2160" id="Tech-Blue"></a></section>
+    <section id="description">
+      <h2>Nike Tech</h2>
+	  <p>Men's Fleece Windrunner Full-Zip Jacket</p>
+	  <h3>$140</h3>
+      <div id="colors">
+        <button id="Grey-btn" onClick="MM_showHideLayers('Tech-Grey','','show','Tech-Red','','hide','Tech-Blue','','hide')"></button>
+        <button id="Red-btn" onClick="MM_showHideLayers('Tech-Grey','','hide','Tech-Red','','show','Tech-Blue','','hide')"></button>
+        <button id="Blue-btn" onClick="MM_showHideLayers('Tech-Grey','','hide','Tech-Red','','hide','Tech-Blue','','show')"></button>
+      </div>
+		<h1>Sizes</h1>
+      <div id="sizes">
+        <button>XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+		<button>XL</button>
+      </div>
+		<button id="cart">Add to cart</button>
+    </section>
+  </main>
+  <footer>
+	<p>© 2026, Jaheen Luzunaris. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
+</wrapper>
+</body>
+</html>
